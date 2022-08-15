@@ -1,16 +1,16 @@
 var petData = [
   {
-    image: { src: "Photos/Gato1.jpg", alt: "Gato", width: 120, height: 160 },
+    image: { src: "../Photos/Gato1.jpg", alt: "Gato", width: 120, height: 160 },
     name: "Gato",    
     description: "<span>Gato</span> is the king of the house. He is the oldest of the crew. I found him on the street.",
     type: "gato"
   }, {
-    image: { src: "Photos/Outro1.jpg", alt: "Outro Gato", width: 120, height: 160 },
+    image: { src: "../Photos/Outro1.jpg", alt: "Outro Gato", width: 120, height: 160 },
     name: "Outro Gato",
     description: "<span>Outro Gato</span> is the shy one. He doesn't like to be carried. And you can only touch him in special ocasions.",
     type: "outro"
   }, {
-    image: { src: "Photos/Branca1.jpg", alt: "Branca", width: 120, height: 160 },
+    image: { src: "../Photos/Branca1.jpg", alt: "Branca", width: 120, height: 160 },
     name: "Branca",
     description: "<span>Branca</span> was our pretty queen. Unfortunately, she died last year after a rough battle against breast cancer.",
     type: "branca"
