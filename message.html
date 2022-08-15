@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-CA">
+   <head>
+      <meta charset="UTF-8">
+      <title>Lais Furtado</title>
+      <link rel="stylesheet" href="normalize1.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+      <script src="message.js"></script>      
+   </head>
+   <body>
+      <div class="container-main">
+         <header>            
+            <h1>CATS & OTHER STUFF</h1>
+          </header> 
+          <div class="menu">
+            <nav>             
+               <ul>
+                  <li><a href="index.html">Home</a></li>                     
+                  <li><a href="interests.html">Interests</a></li>
+                  <li><a href="expertise.html">Expertise</a></li>
+                  <li><a href="cats.html">Cats</a></li>
+                  <li class="selected"><a href="message.html">Contact</a></li>
+               </ul>
+            </nav>                    
+         </div>
+         <main>
+            <div class="col-1">
+               <a href="https://twitter.com/laisslf" class="fa fa-twitter" target="_blank"></a>
+               <a href="https://www.linkedin.com/in/lais-furtado/" class="fa fa-linkedin" target="_blank"></a>
+               <a href="https://www.instagram.com/oxentecat/" class="fa fa-instagram" target="_blank"></a>
+              </div>
+           <div class="col-2">
+            <h2>Send me a message</h2>               
+            <form id="signup" name="signup" action="https://httpbin.org/post" method="post" onsubmit='return formValidation()' novalidate>
+                <label for="first">First Name (*):</label>
+                <input
+                    id="first"
+                    name="first"  
+                    type="text"
+                    required="required"
+                    value=''                           
+                />
+                <label for="last">Last Name (*):</label>
+                <input
+                    id="last"
+                    name="last"  
+                    type="text"
+                    required="required"
+                    value=''                           
+                />
+                              
+                <label for="email">E-mail (*):</label>
+                <input
+                    id="email"
+                    name="email"  
+                    type="email"
+                    required="required"
+                    value=''                            
+                />
+                <label title="Phone number must have the format of (###)-###-####." for="phone"> Phone:</label>
+                    <input
+                        id="phone"
+                        name="phone"  
+                        type="tel"                                                
+                        value=''                            
+                />
+                <label for="street">Street:</label>
+                <input
+                    id="street"
+                    name="street"  
+                    type="text"                    
+                    value=''                                                                                 
+                />
+                <label for="stNumber">Number:</label>
+                <input
+                    id="stNumber"
+                    name="stnumber"  
+                    type="number"
+                    min="1"                                                        
+                />
+                <label for="city">City:</label>
+                <input
+                    id="city"
+                    name="city"  
+                    type="text"                                                        
+                />
+                <label for="province">Province:</label>
+                <select
+                    id="province"
+                    name="province"                        
+                    size="1"
+                >
+                    <option disabled selected value> Select an option </option>   
+                    <option value="1">Alberta</option>
+                    <option value="2">British Columbia</option>
+                    <option value="3">Manitoba</option>
+                    <option value="4">New Brunswick</option>
+                    <option value="5">Newfoundland and Labrador</option>
+                    <option value="6">Nova Scotia</option>
+                    <option value="7">Northwest Territories</option>
+                    <option value="8">Nunavut</option>
+                    <option value="9">Ontario</option>
+                    <option value="10">Prince Edward Island</option>
+                    <option value="11">Quebec</option>
+                    <option value="12">Saskatchewan</option>
+                    <option value="13">Yukon</option>
+                </select>                                                            
+                
+                <label title="Only Canadian format allowed without spaces." for="postalcode">Postal Code:</label>
+                <input
+                    id="postalcode"
+                    name="postalcode"  
+                    type="text"                                                                               
+                />
+                <label for="company">Company:</label>
+                <input
+                    id="company"
+                    name="company"  
+                    type="text"                                                       
+                />
+                <label for="occupation">Occupation:</label>
+                <input
+                    id="occupation"
+                    name="occupation"  
+                    type="text"                                                        
+                />
+                <label for="message">Message (*):</label>
+                <textarea
+                    id="message"                
+                    name="message"
+                    rows="10"
+                    required="required"                                    
+                ></textarea>                
+                <div class="buttons">
+                    <input
+                        type="reset"
+                        name="reset"
+                        value="Reset"                            
+                        onclick="clearerrors()"
+                    />
+                    <input 
+                        type="submit" 
+                        name="Submit" 
+                        value="Submit"                            
+                    />                         
+                </div>                
+            </form>                  
+            </div>
+            <div class="col-3">
+                <div id='errors'></div>                
+            </div>           
+          </main>
+          <footer>
+            <p>&copy; LaisFurtado</p>
+          </footer>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-CA">
+   <head>
+      <meta charset="UTF-8">
+      <title>Lais Furtado</title>
+      <link rel="stylesheet" href="normalize1.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="data.js"></script>
+        <script src="a4-main.js"></script>       
+   </head>
+   <body>
+      <div class="container-main">
+         <header>            
+            <h1>CATS & OTHER STUFF</h1>
+          </header> 
+          <div class="menu">
+            <nav>             
+               <ul>
+                  <li><a href="index.html">Home</a></li>                     
+                  <li><a href="interests.html">Interests</a></li>
+                  <li><a href="expertise.html">Expertise</a></li>
+                  <li class="selected"><a href="cats.html">Cats</a></li>
+                  <li><a href="message.html">Contact</a></li>
+               </ul>
+            </nav>                    
+         </div>
+         <main>
+            <div class="col-1">
+               <a href="https://twitter.com/laisslf" class="fa fa-twitter" target="_blank"></a>
+               <a href="https://www.linkedin.com/in/lais-furtado/" class="fa fa-linkedin" target="_blank"></a>
+               <a href="https://www.instagram.com/oxentecat/" class="fa fa-instagram" target="_blank"></a>
+              </div>
+            <div class="col-2">
+               <article>
+                  <h2>Cats</h2>
+                  <p>So, to showcase my abilities, here are some photos of my cats.</p>
+                  
+                     <p>Just click on a photo to see more photos of the cat. Or just click on All Cats to see all of the photos.</p>
+                     <button class="cats" onclick="filterAllPets()">All Cats</button>                     
+                  </article>
+               <div class="table">
+                <table class="main-table">
+                    <tbody id="main-table-body">
+                    </tbody>
+                </table>
+                </div>              
+            </div>            
+          </main>
+          <footer>
+            <p>&copy; LaisFurtado</p>
+          </footer>
+      </div>
+   </body>
+</html>
